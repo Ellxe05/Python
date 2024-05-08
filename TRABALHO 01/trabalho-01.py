@@ -25,7 +25,7 @@ elif (res >= 6000 and res < 10000):
 else: 
     desconto = 11 #DESCONTO DE 11%
 
-#COM ESSA PORCARIA DE DESCONTO DOS INFERNOS:
+#COM DESCONTO
 preco_total = res * (desconto/100)
 preco_final = res - preco_total
 
