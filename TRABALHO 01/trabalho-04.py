@@ -1,14 +1,5 @@
 #QUESTAO 04
 print('Bem vindo a Livraria da Gabrielle Silva')
-print('-' * 50)
-print('                MENU PRINCIPAL')
-print('-' * 50)
-
-print('Escolha a opção desejada:')
-print('1 - Cadastrar Livro')
-print('2 - Consultar Livro(s)')
-print('3 - Remover Livro')
-print('4 - Sair')
 
 lista_livro = []
 id_global = 0
@@ -48,16 +39,31 @@ def remover_livro():
             lista_livro.remove(livro)
             print('Livro removido com sucesso!')
             return
-        else:
-            print('Id inválido')
+    print('Id inválido')
 
 while True:
+    print('-' * 50)
+    print('                MENU PRINCIPAL')
+    print('-' * 50)
+
+    print('Escolha a opção desejada:')
+    print('1 - Cadastrar Livro')
+    print('2 - Consultar Livro(s)')
+    print('3 - Remover Livro')
+    print('4 - Sair')
+    
     opcao_escolhida = input('>>')
     if (opcao_escolhida == '1'):
         cadastrar_livro(id_global)
     elif (opcao_escolhida == '2'):
+        print('-' * 50)
+        print('                MENU CONSULTAR LIVRO')
+        print('-' * 50)
         consultar_livro()
     elif (opcao_escolhida == '3'):
+        print('-' * 50)
+        print('                MENU REMOVER LIVRO')
+        print('-' * 50)
         remover_livro()
     elif (opcao_escolhida == '4'):
         print('Encerrando...')
