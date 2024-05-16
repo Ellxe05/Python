@@ -3,7 +3,7 @@ print('Bem vindo a Livraria da Gabrielle Silva')
 
 lista_livro = []
 id_global = 0
-
+#CADASTRANDO
 def cadastrar_livro():
     global id_global
     id_global += 1
@@ -12,7 +12,7 @@ def cadastrar_livro():
     editora = input('Por favor entre com a editora do livro: ')
     livro = {'id': id_global, 'nome': nome, 'autor': autor, 'editora': editora}
     lista_livro.append(livro)
-
+#CONSULTANDO - PROGRAMANDO CADA OPÇAO
 def consultar_livro():
     while True:
         opcao = input('1 - Consultar Todos | 2 - Consultar por Id | 3 - Consultar por Autor | 4 - Retornar ao menu: ')
@@ -34,7 +34,7 @@ def consultar_livro():
             return
         else:
             print('Opção inválida')
-
+#REMOVENDO O LIVRO
 def remover_livro():
     remocao = int(input('Digite o id do livro a ser removido: '))
     for livro in lista_livro:
@@ -43,7 +43,7 @@ def remover_livro():
             print('Livro removido com sucesso!')
             return
     print('Id inválido')
-
+#PROGRAMA PRINCIPAL
 while True:
     print('-' * 50)
     print('                MENU PRINCIPAL')
